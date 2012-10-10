@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 49995 $ (must be within the first 200 characters of the file) -->
+<View view_layout="stacked"
+      h_alignment="LEFT"
+      v_alignment="TOP"
+      width_simple   = "150"
+      width_advanced = "600"
+      
+      icon_colwidth = "7"
+      name_colwidth = "60"
+      rank_colwidth = "80"
+      class_colwidth = "80"
+      level_colwidth = "50"
+      region_colwidth = "120"
+      
+      offline_font = "NORMAL_ITALIC"
+      online_alpha = "1.0"
+      offline_alpha = "0.5"
+      guild_color = "lime"
+      friends_color = "ACTIVE"
+      max_size_extend="Point(-1,COORD_MAX)"
+    >
+    
+        
+        <MultiColListView name="MemberListView"
+                          view_flags="MLF_AUTOLAYOUT"
+                          min_size_extend="Point(600,150)"
+			  layout_borders="Rect(5,35,20,40)"
+                          col_hdr_border_gfx_tl         = ""
+                          col_hdr_border_gfx_tr         = ""
+                          col_hdr_border_gfx_bl         = ""
+                          col_hdr_border_gfx_br         = ""
+                          col_hdr_border_gfx_left       = ""
+                          col_hdr_border_gfx_top        = ""
+                          col_hdr_border_gfx_right      = ""
+                          col_hdr_border_gfx_bottom     = ""
+                          col_hdr_border_gfx_background = ""
+
+                          col_hdr_border_sort_gfx_tl         = ""
+                          col_hdr_border_sort_gfx_tr         = ""
+                          col_hdr_border_sort_gfx_bl         = ""
+                          col_hdr_border_sort_gfx_br         = ""
+                          col_hdr_border_sort_gfx_left       = ""
+                          col_hdr_border_sort_gfx_top        = ""
+                          col_hdr_border_sort_gfx_right      = ""
+                          col_hdr_border_sort_gfx_bottom     = ""
+                          col_hdr_border_sort_gfx_background = ""
+
+                          border_gfx_tl         = ""
+                          border_gfx_tr         = ""
+                          border_gfx_bl         = ""
+                          border_gfx_br         = ""
+                          border_gfx_left       = ""
+                          border_gfx_top        = ""
+                          border_gfx_right      = ""
+                          border_gfx_bottom     = ""
+                          border_gfx_background = ""
+
+                          sort_arrow_gfx_nosort = ""
+                          sort_arrow_gfx_up     = ""
+                          sort_arrow_gfx_down   = ""
+
+                          label_font_unsorted   = "NORMAL_BOLD"
+                          label_font_sorted     = "NORMAL_BOLD"
+
+                          col_hdr_height                = "26"
+                          col_hdr_label_offset          = "Point(5,5)"
+                          col_hdr_sort_icon_offset      = "Point(2,5)"
+                          _content_borders              = "Rect(8,8,11,0)"
+                          
+                          row_bg_alpha_even="0.0"
+                          row_bg_alpha_odd="0.0"
+                          />
+
+    <Button name = "SetAdvancedModeButton"
+	    h_local_alignment="RIGHT"
+            layout_borders = "Rect(0,51,0,0)"
+            gfxid_raised = "guild/popoutarrow_out.tga"
+            gfxid_pressed = "guild/popoutarrow_out.tga"
+            gfxid_highlight = "guild/popoutarrow_out_hover.tga"
+            view_alpha = "0.75"
+            />
+
+    <Button name = "SetSimpleModeButton"
+	    h_local_alignment="RIGHT"
+            layout_borders = "Rect(0,51,0,0)"
+            gfxid_raised = "guild/popoutarrow_in.tga"
+            gfxid_pressed = "guild/popoutarrow_in.tga"
+            gfxid_highlight = "guild/popoutarrow_in_hover.tga"
+            view_alpha = "0.75"
+            />
+
+    <SocialIconView name = "SocialIconView"
+                    layout_borders = "Rect(0,0,0,0)"
+                    view_alpha = "0.75"
+                    />
+
+</View>

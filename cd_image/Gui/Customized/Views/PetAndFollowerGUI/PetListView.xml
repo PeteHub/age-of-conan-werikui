@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- $Change: 49995 $ (must be within the first 200 characters of the file) -->
+<View view_layout="vertical"
+>
+	<BorderView view_layout="vertical"
+		layout_inner_borders="Rect(10,10,10,10)"
+		view_local_alpha="0.5"
+		gfx_tl         = "PortraitGUI/small_black_window_topleft.tga"
+	  	gfx_tr         = "PortraitGUI/small_black_window_topright.tga"
+		gfx_bl         = "PortraitGUI/small_black_window_bottomleft.tga"
+		gfx_br         = "PortraitGUI/small_black_window_bottomright.tga"
+		gfx_left       = "PortraitGUI/small_black_window_left.tga"
+		gfx_top        = "PortraitGUI/small_black_window_top.tga"
+		gfx_right      = "PortraitGUI/small_black_window_right.tga"
+		gfx_bottom     = "PortraitGUI/small_black_window_bottom.tga"
+		gfx_background = "PortraitGUI/small_black_window_background.tga">
+    <PetPointView name="PetPointView"
+		  petpoint_gfx_empty="PortraitGUI/petpoint_empty.tga"
+		  petpoint_gfx_full="PortraitGUI/petpoint_full.tga"
+		  max_pet_points = "8" />
+    
+    <MiniCharListView name="ListView"
+		      hide_empty_slots="true"
+		      show_char_stats_in_hoverinfo="false"
+		      max_char_count="20"
+		      view_layout="vertical"
+		      layout_borders="Rect(0,10,0,0)" />
+	</BorderView>
+</View>

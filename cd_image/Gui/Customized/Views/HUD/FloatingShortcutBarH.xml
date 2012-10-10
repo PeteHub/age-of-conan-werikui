@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 49995 $ (must be within the first 200 characters of the file) -->
+<View xmlns:template="template.dtd" view_layout="stacked" view_flags="WID_HANDLE_MOUSE">
+    <template:ShortcutView layout_borders="Rect(0,0,0,0)"
+			   out_of_range_bitmap="icons/outofrange_icon.tga"
+			   slot_template="SlotTemplate">
+	<template:ItemSlotView template:name="SlotTemplate"
+			       layout_borders="Rect(0,1,0,1)"
+			       slot_size    = "Point(37,37)"
+			       icon_borders = "Point(3,3)"
+			       max_zoom="1.0"
+			       gfx_background=""
+			       />
+    </template:ShortcutView>	
+
+    <View name="BgView" view_layout="horizontal">
+	<BitmapView bitmap_gfx="bottombars/ASB/werik_asb_left.tga"/>
+	<BitmapView bitmap_gfx="bottombars/ASB/werik_asb_horizontal_background.tga" max_size_extend="Point(COORD_MAX,-1.0f)"/>
+	<BitmapView name="ResizeKnob" bitmap_gfx="bottombars/ASB/werik_asb_right.tga" view_flags="WID_HANDLE_MOUSE" />
+    </View>
+    <View min_size_limit="Point(37,COORD_MAX)" view_layout="horizontal" h_alignment="EXTEND" layout_borders="Rect(13,0,13,0)">
+	<ShortcutView name="ShortcutView"
+		      view_flags = "SBF_HIDE_EMPTY_SLOTS"
+		      view_layout="horizontal"		      
+		      icon_spacing = "-4"
+		      slot_bg_gfx="bottombars/ASB/asb_slot.tga"
+		      first_slot="20000"
+		      slot_count="20"
+		      hotkeyrange_start="Shortcutbar_Alt1"/>
+    </View>
+</View>

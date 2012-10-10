@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 49995 $ (must be within the first 200 characters of the file) -->
+<View view_layout="stacked">
+  <BitmapView bitmap_gfx="bottombars/werik_assassin_soulshard_box_hide.tga"/>
+  <View view_layout="stacked" layout_borders="Rect(0,0,0,0)">
+    <BitmapView name="Shard0" bitmap_gfx="bottombars/werik_assassin_soulshard_1.tga"/>
+    <BitmapView name="Shard1" bitmap_gfx="bottombars/werik_assassin_soulshard_2.tga"/>
+    <BitmapView name="Shard2" bitmap_gfx="bottombars/werik_assassin_soulshard_3.tga"/>
+    <BitmapView name="Shard3" bitmap_gfx="bottombars/werik_assassin_soulshard_4.tga"/>
+    <BitmapView name="Shard4" bitmap_gfx="bottombars/werik_assassin_soulshard_5.tga"/>
+  </View>
+</View>
